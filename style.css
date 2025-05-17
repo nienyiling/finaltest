@@ -36,7 +36,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  cursor: url('https://i.imgur.com/dHcHfvW.png'), auto;
+  cursor: url('https://raw.githubusercontent.com/nienyiling/image-hosting/refs/heads/main/french_bulldog_jump_30x30.png'), auto;
 }
 
 .item-c {
@@ -129,7 +129,7 @@
   font-size: 16px;
   color: yellow;
   border-color: yellow;
-  cursor: url('https://i.imgur.com/dHcHfvW.png'), pointer;
+  cursor: url('https://raw.githubusercontent.com/nienyiling/image-hosting/refs/heads/main/french_bulldog_jump_30x30.png'), pointer;
 }
 
 /* ✅ 響應式設計 */
