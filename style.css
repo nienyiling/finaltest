@@ -138,65 +138,77 @@
 
 
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .img-head {
-    width: 100px;
-    margin-bottom: 10px;
-  }
-  
-  .head-h {
-    font-size: 28px;
+  body {
+    background-color: black; /* 與您網站當前背景一致 */
     margin: 0;
+    padding: 0;
   }
   
   .content {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch; /* 改為stretch以填充整個寬度 */
-    padding: 15px 0; /* 減少左右內邊距 */
+    padding: 0; /* 移除內容區的內邊距 */
   }
   
   .item-c {
-    width: calc(100% - 30px); /* 調整寬度計算，減去內邊距 */
-    max-width: none; /* 移除最大寬度限制 */
-    margin: 0 15px 20px; /* 使用左右邊距代替居中 */
-    box-sizing: border-box; /* 確保內邊距不會增加元素寬度 */
+    width: 100%; /* 使卡片佔據整個寬度 */
+    margin: 0 0 8px; /* 減小項目間的垂直間距 */
+    border: none; /* 移除邊框 */
+    border-radius: 0; /* 移除圓角 */
+    box-shadow: none; /* 移除陰影 */
+    padding: 0 0 8px; /* 調整上下內邊距 */
+    background-color: #1c1c1c; /* 深灰色背景，類似您截圖中的顏色 */
   }
   
-  /* 其餘樣式保持不變 */
-}
-
-/* 添加額外的小屏幕手機媒體查詢 */
-@media (max-width: 480px) {
-  .content {
-    padding: 10px 0;
+  .img-c {
+    border-radius: 0; /* 移除圖片的圓角 */
+    aspect-ratio: 16/9; /* 保持圖片比例一致 */
+    object-fit: cover; /* 確保圖片填滿容器 */
   }
   
-  .item-c {
-    width: calc(100% - 20px); /* 更窄的屏幕，更小的邊距 */
-    margin: 0 10px 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 較淺的陰影 */
-    border-radius: 4px; /* 較小的圓角 */
+  .date-c {
+    margin: 8px 12px 4px; /* 調整日期的邊距 */
   }
   
-  .head-h {
-    font-size: 24px;
-  }
-  
-  .inp-c,
-  .aa-c,
-  .date-c,
   .hashtag-c {
-    font-size: 12px;
+    margin: 4px 12px; /* 調整標籤的邊距 */
   }
   
   .hh-c {
-    font-size: 18px;
+    margin: 8px 12px; /* 調整標題的邊距 */
+    font-size: 20px; /* 增加標題字體大小 */
+    line-height: 1.3; /* 調整行高 */
+  }
+  
+  .inp-c {
+    margin: 8px 12px; /* 調整內容的邊距 */
+    font-size: 14px; /* 增加內容字體大小 */
+    line-height: 1.5; /* 調整行高 */
+  }
+  
+  .aa-c {
+    margin: 4px 12px; /* 調整按鈕的邊距 */
+    border: none; /* 移除按鈕邊框 */
+    padding: 8px 12px; /* 增加按鈕的內邊距 */
+    background-color: #333; /* 深色背景 */
+    color: white; /* 白色文字 */
+    border-radius: 4px; /* 小圓角 */
+    width: auto; /* 按鈕寬度自適應 */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 12px; /* 減小頂部標題區域的內邊距 */
+  }
+  
+  .head-h {
+    font-size: 22px; /* 進一步減小標題字體大小 */
+  }
+  
+  .hh-c {
+    font-size: 18px; /* 在更小的螢幕上調整標題字體大小 */
+  }
+  
+  .inp-c {
+    font-size: 13px; /* 在更小的螢幕上調整內容字體大小 */
   }
 }
