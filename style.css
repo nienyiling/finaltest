@@ -11,6 +11,7 @@
   cursor: url('https://i.imgur.com/dHcHfvW.png'), auto;
   padding: 10px 20px;
   height: auto; 
+  align-items:center;
 }
 
 .img-head {
