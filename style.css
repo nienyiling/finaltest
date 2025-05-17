@@ -151,15 +151,15 @@
     margin: 0;
   }
 
-  /* ✅ 關鍵：讓卡片垂直排，寬度接近手機螢幕 */
+  /* ✅ 加上這段，強制 item-c 獨立一行 */
   .content {
     flex-direction: column;
     align-items: center;
   }
 
   .item-c {
-    width: 95vw;        /* 滿版寬度，稍微留邊 */
-    max-width: 500px;   /* 避免平板時太大 */
+    width: 95vw;
+    max-width: 500px;
     margin-bottom: 20px;
   }
 
