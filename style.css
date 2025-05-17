@@ -144,63 +144,59 @@
     padding: 20px;
     text-align: center;
   }
-
+  
   .img-head {
     width: 100px;
     margin-bottom: 10px;
   }
-
+  
   .head-h {
     font-size: 28px;
     margin: 0;
   }
-
+  
   .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 15px;
+    align-items: stretch; /* 改為stretch以填充整個寬度 */
+    padding: 15px 0; /* 減少左右內邊距 */
   }
-
+  
   .item-c {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto 20px;
+    width: calc(100% - 30px); /* 調整寬度計算，減去內邊距 */
+    max-width: none; /* 移除最大寬度限制 */
+    margin: 0 15px 20px; /* 使用左右邊距代替居中 */
+    box-sizing: border-box; /* 確保內邊距不會增加元素寬度 */
   }
-
-  .ul-f {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .f-a {
-    display: inline-block;
-  }
+  
+  /* 其餘樣式保持不變 */
 }
 
+/* 添加額外的小屏幕手機媒體查詢 */
 @media (max-width: 480px) {
+  .content {
+    padding: 10px 0;
+  }
+  
+  .item-c {
+    width: calc(100% - 20px); /* 更窄的屏幕，更小的邊距 */
+    margin: 0 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 較淺的陰影 */
+    border-radius: 4px; /* 較小的圓角 */
+  }
+  
   .head-h {
     font-size: 24px;
   }
-
+  
   .inp-c,
   .aa-c,
   .date-c,
   .hashtag-c {
     font-size: 12px;
   }
-
+  
   .hh-c {
     font-size: 18px;
   }
-
-  .item-c {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto 10px;
-    padding: 10px;
-  }
 }
-
