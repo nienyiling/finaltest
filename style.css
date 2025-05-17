@@ -1,29 +1,28 @@
 /* Header 區塊 */
 .header {
+  height: 100px;
   max-width: 1024px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: center;         /* 垂直置中 */
+  justify-content: flex-start; /* 靠左排列 */
   background: black;
   color: white;
-  padding: 10px 20px;
-  height: auto; /* 不要固定高度，交由 padding 控制 */
+  padding: 0 20px;
   cursor: url('https://i.imgur.com/dHcHfvW.png'), auto;
 }
 
 .img-head {
-  height: 60px;         /* ✅ 固定高度讓圖片不撐開 header */
-  width: auto;          /* ✅ 保持圖片比例 */
-  object-fit: contain;  /* ✅ 保證不拉伸 */
-  margin-right: 15px;   /* ✅ 與文字保有空間 */
+  height: 80px;       /* 明確限制高度，不撐爆 header */
+  width: auto;        /* 保持比例 */
+  margin-right: 20px; /* 圖片與標題之間留距離 */
+  object-fit: contain;
 }
 
 .head-h {
-  font-size: 40px;
-  margin: 0 auto;
-  flex-grow: 1;
-  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
 }
 
 /* 內容區塊 */
