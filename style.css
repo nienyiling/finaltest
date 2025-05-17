@@ -1,24 +1,23 @@
 /* Header 區塊 */
 .header {
-  height: 100px;
   max-width: 1024px;
   margin: 0 auto;
   display: flex;
-  align-items: center; /* 垂直置中 */
-  justify-content: center; /* 整體內容水平置中 */
+  align-items: center;
+  justify-content: flex-start;
   background: black;
   color: white;
   padding: 0 20px;
   cursor: url('https://i.imgur.com/dHcHfvW.png'), auto;
+  padding: 10px 20px;
 }
 
 .img-head {
-  height: 80px; /* 限制高度 */
-  width: auto; /* 保持比例 */
-  max-width: 150px; /* 新增：限制圖片最大寬度，防止撐爆 */
-  margin-right: 20px; /* 圖片與文字間距 */
-  object-fit: contain; /* 確保圖片縮放不變形 */
-  flex-shrink: 0; /* 防止圖片被壓縮 */
+  width: 20%;
+  height: 80%;
+  min-width: 60px;
+  max-height: 80%;
+  object-fit: contain;
 }
 
 .head-h {
