@@ -1,4 +1,3 @@
-/* Header 區塊 */
 .header {
   max-width: 1024px;
   margin: 0 auto;
@@ -24,14 +23,14 @@
   font-size: 42px;
   font-weight: bold;
   margin: 0;
-  text-align: center; /* 確保文字在 header 中間 */
+  text-align: center; 
 }
 
-/* 內容區塊 */
+
 .content {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 30px 15px; /* 減少左右 padding */
+  padding: 30px 15px; 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -48,7 +47,7 @@
   border-radius: 6px;
   padding: 12px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-  flex: 0 0 auto; /* 固定寬度 */
+  flex: 0 0 auto; 
 }
 
 .img-c {
@@ -103,7 +102,7 @@
   cursor: url('https://raw.githubusercontent.com/nienyiling/image-hosting/refs/heads/main/french_bulldog_jump_30x30.png'), pointer;
 }
 
-/* Footer 區塊 */
+
 .ul-f {
   display: flex;
   justify-content: space-between;
@@ -137,7 +136,7 @@
   cursor: url('https://raw.githubusercontent.com/nienyiling/image-hosting/refs/heads/main/french_bulldog_jump_30x30.png'), pointer;
 }
 
-/* ✅ 響應式設計 */
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
