@@ -10,13 +10,13 @@
   padding: 0 20px;
   cursor: url('https://i.imgur.com/dHcHfvW.png'), auto;
   padding: 10px 20px;
-  height: auto; 
 }
 
 .img-head {
-  width: auto;
-  height: 60%;
-  margin-right: 15px;
+  width: 20%;
+  height: 80%;
+  min-width: 60px;
+  max-height: 80%;
   object-fit: contain;
 }
 
