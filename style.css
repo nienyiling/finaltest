@@ -1,7 +1,6 @@
 /* Header 區塊 */
 .header {
   max-width: 1024px;
-  height: 100px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -10,12 +9,15 @@
   color: white;
   padding: 0 20px;
   cursor: url('https://i.imgur.com/dHcHfvW.png'), auto;
+  padding: 10px 20px;
 }
 
 .img-head {
   width: 20%;
-  height:50px;
+  height: 100%;
   min-width: 60px;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .head-h {
