@@ -139,76 +139,76 @@
 
 @media (max-width: 768px) {
   body {
-    background-color: black; /* 與您網站當前背景一致 */
+    background-color: black; 
     margin: 0;
     padding: 0;
   }
   
   .content {
-    padding: 0; /* 移除內容區的內邊距 */
+    padding: 0; 
   }
   
   .item-c {
-    width: 100%; /* 使卡片佔據整個寬度 */
-    margin: 0 0 8px; /* 減小項目間的垂直間距 */
-    border: none; /* 移除邊框 */
-    border-radius: 0; /* 移除圓角 */
-    box-shadow: none; /* 移除陰影 */
-    padding: 0 0 8px; /* 調整上下內邊距 */
-    background-color: #1c1c1c; /* 深灰色背景，類似您截圖中的顏色 */
+    width: 100%; 
+    margin: 0 0 8px; 
+    border: none; 
+    border-radius: 0; 
+    box-shadow: none; 
+    padding: 0 0 8px; 
+    background-color: #1c1c1c; 
   }
   
   .img-c {
-    border-radius: 0; /* 移除圖片的圓角 */
-    aspect-ratio: 16/9; /* 保持圖片比例一致 */
-    object-fit: cover; /* 確保圖片填滿容器 */
+    border-radius: 0; 
+    aspect-ratio: 16/9;
+    object-fit: cover;
   }
   
   .date-c {
-    margin: 8px 12px 4px; /* 調整日期的邊距 */
+    margin: 8px 12px 4px; 
   }
   
   .hashtag-c {
-    margin: 4px 12px; /* 調整標籤的邊距 */
+    margin: 4px 12px; 
   }
   
   .hh-c {
-    margin: 8px 12px; /* 調整標題的邊距 */
-    font-size: 20px; /* 增加標題字體大小 */
-    line-height: 1.3; /* 調整行高 */
+    margin: 8px 12px; 
+    font-size: 20px; 
+    line-height: 1.3; 
   }
   
   .inp-c {
-    margin: 8px 12px; /* 調整內容的邊距 */
-    font-size: 14px; /* 增加內容字體大小 */
-    line-height: 1.5; /* 調整行高 */
+    margin: 8px 12px; 
+    font-size: 14px; 
+    line-height: 1.5; 
   }
   
   .aa-c {
-    margin: 4px 12px; /* 調整按鈕的邊距 */
-    border: none; /* 移除按鈕邊框 */
-    padding: 8px 12px; /* 增加按鈕的內邊距 */
-    background-color: #333; /* 深色背景 */
-    color: white; /* 白色文字 */
-    border-radius: 4px; /* 小圓角 */
-    width: auto; /* 按鈕寬度自適應 */
+    margin: 4px 12px;
+    border: none; 
+    padding: 8px 12px; 
+    background-color: #333; 
+    color: white; 
+    border-radius: 4px; 
+    width: auto; 
   }
 }
 
 @media (max-width: 480px) {
   .header {
-    padding: 12px; /* 減小頂部標題區域的內邊距 */
+    padding: 12px; 
   }
   
   .head-h {
-    font-size: 22px; /* 進一步減小標題字體大小 */
+    font-size: 22px; 
   }
   
   .hh-c {
-    font-size: 18px; /* 在更小的螢幕上調整標題字體大小 */
+    font-size: 18px; 
   }
   
   .inp-c {
-    font-size: 13px; /* 在更小的螢幕上調整內容字體大小 */
+    font-size: 13px; 
   }
 }
