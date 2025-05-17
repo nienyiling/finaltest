@@ -7,17 +7,16 @@
   justify-content: flex-start;
   background: black;
   color: white;
-  padding: 0 20px;
-  cursor: url('https://i.imgur.com/dHcHfvW.png'), auto;
   padding: 10px 20px;
+  height: auto; /* 不要固定高度，交由 padding 控制 */
+  cursor: url('https://i.imgur.com/dHcHfvW.png'), auto;
 }
 
 .img-head {
-  width: 20%;
-  height: 80%;
-  min-width: 60px;
-  max-height: 80%;
-  object-fit: contain;
+  height: 60px;         /* ✅ 固定高度讓圖片不撐開 header */
+  width: auto;          /* ✅ 保持圖片比例 */
+  object-fit: contain;  /* ✅ 保證不拉伸 */
+  margin-right: 15px;   /* ✅ 與文字保有空間 */
 }
 
 .head-h {
