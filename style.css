@@ -4,8 +4,8 @@
   max-width: 1024px;
   margin: 0 auto;
   display: flex;
-  align-items: center;         /* 垂直置中 */
-  justify-content: flex-start; /* 靠左排列 */
+  align-items: center; /* 垂直置中 */
+  justify-content: center; /* 整體內容水平置中 */
   background: black;
   color: white;
   padding: 0 20px;
@@ -13,16 +13,19 @@
 }
 
 .img-head {
-  height: 80px;       /* 明確限制高度，不撐爆 header */
-  width: auto;        /* 保持比例 */
-  margin-right: 20px; /* 圖片與標題之間留距離 */
-  object-fit: contain;
+  height: 80px; /* 限制高度 */
+  width: auto; /* 保持比例 */
+  max-width: 150px; /* 新增：限制圖片最大寬度，防止撐爆 */
+  margin-right: 20px; /* 圖片與文字間距 */
+  object-fit: contain; /* 確保圖片縮放不變形 */
+  flex-shrink: 0; /* 防止圖片被壓縮 */
 }
 
 .head-h {
   font-size: 36px;
   font-weight: bold;
   margin: 0;
+  text-align: center; /* 確保文字在 header 中間 */
 }
 
 /* 內容區塊 */
