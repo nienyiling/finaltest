@@ -116,7 +116,7 @@
 }
 
 .f-a {
-  font-size: 12px;
+  font-size: 14px;
   color: lightgray;
   text-decoration: none;
   border: 1px solid gray;
@@ -126,7 +126,7 @@
 }
 
 .f-a:hover {
-  font-size: 14px;
+  font-size: 16px;
   color: yellow;
   border-color: yellow;
   cursor: url('https://i.imgur.com/dHcHfvW.png'), pointer;
