@@ -29,29 +29,30 @@
 
 /* 內容區塊 */
 .content {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 30px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  cursor: url('https://i.imgur.com/dHcHfvW.png'), auto;
+  flex-direction: column; /* 預設單欄，確保一致性 */
+  align-items: center;
+  width: 100%;
+  max-width: 1024px; /* 與 header 一致 */
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .item-c {
-  width: 300px;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 12px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 500px; 
+  margin: 0 auto 20px; 
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 8px; 
+  background: #fff;
 }
 
-.img-c {
-  width: 100%;
+.item-c img {
+  max-width: 100%;
   height: auto;
-  border-radius: 4px;
+  display: block;
 }
 
 .date-c {
@@ -134,7 +135,7 @@
 
 /* ✅ 響應式設計 */
 @media (max-width: 768px) {
-  .header {
+.header {
     flex-direction: column;
     height: auto;
     padding: 20px;
@@ -152,19 +153,24 @@
   }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;  /* ✅ 加這行強制單欄排 */
-}
-
-  .item-c {
-    width: 95vw;
-    max-width: 500px;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* 強制單欄 */
+    flex-wrap: nowrap; /* 防止換行 */
+    align-items: center;
+    width: 100%;
+    padding: 0 10px; /* 減少內距 */
+    box-sizing: border-box;
   }
 
-  .ul-f {
+.item-c {
+    width: 100%; /* 適應父容器 */
+    max-width: 500px;
+    margin: 0 auto 20px; /* 居中 */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+.ul-f {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -177,7 +183,7 @@
 }
 
 @media (max-width: 480px) {
-  .head-h {
+ .head-h {
     font-size: 24px;
   }
 
@@ -191,6 +197,15 @@
   .hh-c {
     font-size: 18px;
   }
+
+  .item-c {
+    width: 100%; /* 確保佔滿父容器 */
+    max-width: 100%; /* 移除 vw 單位 */
+    margin: 0 auto 15px; /* 居中且減少間距 */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
 
   .item-c {
     width: 100vw;
