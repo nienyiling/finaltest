@@ -31,27 +31,32 @@
 .content {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 30px 15px; /* 減少左右 padding */
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   cursor: url('https://raw.githubusercontent.com/nienyiling/image-hosting/refs/heads/main/french_bulldog_jump_30x30.png'), auto;
 }
 
 .item-c {
   width: 300px;
+  max-width: 100%;
   background: white;
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 12px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  flex: 0 0 auto; /* 固定寬度 */
 }
 
 .img-c {
   width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 4px;
+  display: block;
 }
 
 .date-c {
@@ -155,12 +160,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 15px;
   }
 
   .item-c {
-    width: 95vw;
+    width: 100%;
     max-width: 500px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
 
   .ul-f {
@@ -192,11 +198,10 @@
   }
 
   .item-c {
-    width: 100vw;
-    max-width: 100vw;
-    border-radius: 0;
-    margin-left: -30px; /* 抵消 .content 的 padding */
-    margin-right: -30px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 10px;
+    padding: 10px;
   }
 }
 
