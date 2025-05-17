@@ -7,7 +7,7 @@
   background: black;
   color: white;
   padding: 0 20px;
-  cursor: url('https://raw.githubusercontent.com/nienyiling/image-hosting/refs/heads/main/french_bulldog_jump_30x30.png'), auto;
+  cursor: url('https://github.com/nienyiling/image-hosting/blob/main/doggy_30x30.png?raw=true'), auto;
   padding: 10px 20px;
 }
 
@@ -36,7 +36,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  cursor: url('https://raw.githubusercontent.com/nienyiling/image-hosting/refs/heads/main/french_bulldog_jump_30x30.png'), auto;
+  cursor: url('https://github.com/nienyiling/image-hosting/blob/main/doggy_30x30.png?raw=true'), auto;
 }
 
 .item-c {
@@ -133,7 +133,7 @@
   font-size: 16px;
   color: yellow;
   border-color: yellow;
-  cursor: url('https://raw.githubusercontent.com/nienyiling/image-hosting/refs/heads/main/french_bulldog_jump_30x30.png'), pointer;
+  cursor: url('https://github.com/nienyiling/image-hosting/blob/main/doggy_30x30.png?raw=true'), pointer;
 }
 
 
