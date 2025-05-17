@@ -151,8 +151,16 @@
     margin: 0;
   }
 
+  /* ✅ 關鍵：讓卡片垂直排，寬度接近手機螢幕 */
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .item-c {
-    width: 90%;
+    width: 95vw;        /* 滿版寬度，稍微留邊 */
+    max-width: 500px;   /* 避免平板時太大 */
+    margin-bottom: 20px;
   }
 
   .ul-f {
